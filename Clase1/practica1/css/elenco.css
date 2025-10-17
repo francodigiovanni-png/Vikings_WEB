@@ -1,0 +1,136 @@
+/*--------------------------------------------------------BODY-------------------------------------------------------*/
+
+.imagenFondo{
+width: 100%;
+height: auto;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+/*--------------------------------------------------------Main-------------------------------------------------------*/
+
+main{
+background: linear-gradient(to bottom, #1e0c1b, #2a1125);
+padding: 50px 40px;
+margin: 50px auto;
+border-radius: 10px;
+max-width: 1200px;
+}
+
+/*--------------------------------------------------------Barra de navegacion-------------------------------------------------------*/
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+nav li a:hover {
+  color: #a34096;
+  background-color: rgba(255,255,255,0.1);
+}
+
+
+/*--------------------------------------------------------Titulo y logo-------------------------------------------------------*/
+
+h1 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 48px;
+  color: #f5f5f5;
+  text-shadow: 10px 10px 50px #ff0000;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+
+
+.logoTexto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  height: 100px;
+}
+
+/*--------------------------------------------------------elenco-------------------------------------------------------*/
+
+.personaje {
+  display: flex;
+  margin-bottom: 50px;
+  background-color: rgba(247, 247, 247, 0.05);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.descripcion {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.foto1 ,.foto2 {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto1:hover, .foto2:hover {
+  transform: scale(2.50);
+  box-shadow: 0 10px 20px rgba(255,255,255,0.3);
+}
+
+
+
+/*--------------------------------------------------------Footer-------------------------------------------------------*/
+
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #1a0a1a;
+  font-size: 16px;
+}
+
+.foterRedes{
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ list-style: none;
+  text-decoration: none;
+}
+
+.foterRedes ul{
+  margin-left: 699px
+  ;
+}
+.foterRedes ul li{
+   list-style: none;
+}
