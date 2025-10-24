@@ -14,9 +14,9 @@ body{
 
 main{
 background: linear-gradient(to bottom, #1e0c1b, #2a1125);
-padding: 50px 40px;
-margin: 50px auto;
-max-width: 1200px;
+padding: 2.5% 2.5%;
+margin: 5% auto;
+max-width: 65%;
 }
 
 /*--------------------------------------------------------Barra de navegacion-------------------------------------------------------*/
@@ -25,7 +25,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 2.5%;
 }
 
 nav ul {
@@ -63,7 +63,7 @@ h1 {
 h2 {
   font-family: 'Cinzel', serif;
   font-size: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 4%;
 }
 
 
@@ -103,15 +103,13 @@ footer {
 .foterRedes{
   display: flex;
   align-items: center;
- justify-content: center;
- list-style: none;
+  justify-content: center;
+  list-style: none;
   text-decoration: none;
+  justify-content: space-evenly;
 }
 
-.foterRedes ul{
-  margin-left: 699px
-  ;
-}
+
 .foterRedes ul li{
    list-style: none;
 }
