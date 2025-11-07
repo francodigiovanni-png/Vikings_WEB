@@ -1,187 +1,204 @@
-
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
-/*--------------------------------------------------------BODY-------------------------------------------------------*/
-
-.imagenFondo{
-width: 100%;
-height: auto;
-}
-
-body{
+body {
   background-color: black;
   color: white;
+  font-family: 'Cinzel', serif;
 }
 
-
-/*--------------------------------------------------------Main-------------------------------------------------------*/
-
-main{
-background: linear-gradient(to bottom, #1e0c1b, #2a1125);
-padding: 2.5% 2.5%;
-margin: 5% auto;
-max-width: 65%;
+.imagenFondo {
+  width: 100%;
+  height: auto;
 }
 
-/*--------------------------------------------------------Barra de navegacion-------------------------------------------------------*/
+/*---------------- NAV ----------------*/
 
 nav {
-  width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2.5%;
+  margin: 2em 0;
 }
 
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 2em;
   list-style: none;
 }
 
-nav li a {
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+nav a:hover,
+nav .activo {
+  color: #a34096;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*---------------- TITULOS ----------------*/
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 0 0 40px #ff0000;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.logoTexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 80px;
+}
+
+p {
+  font-size: 19px;
+}
+/*---------------- MAIN ----------------*/
+
+main {
+  background: linear-gradient(to bottom, #1e0c1b, #2a1125);
+  padding: 3% 5%;
+  margin: 4% auto;
+  max-width: 70%;
+  border-radius: 10px;
+}
+/*---------------- REPARTO ----------------*/
+.reparto{
+  font-size: 20px;
+}
+
+/*---------------- TEXTO E IMAGEN PRINCIPAL  ----------------*/
+
+.texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5%;
+}
+
+.texto-contenido {
+  width: 55%;
+}
+
+.texto-contenido p {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.imagenP {
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/*---------------- CONTENIDO ----------------*/
+
+.contenido-general {
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 300px;
+}
+
+.ulContenido {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.aCont {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 10px 15px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 
-nav li a:hover {
-  color: #a34096;
-  background-color: rgba(255,255,255,0.1);
+.aCont:hover {
+  background-color: #a34096;
+  color: #fff;
+  transform: translateX(5px);
+  box-shadow: 0 0 10px rgba(163, 64, 150, 0.6);
 }
 
+/*---------------- IMÁGENES ----------------*/
 
-
-
-
-/*--------------------------------------------------------Titulo y logo-------------------------------------------------------*/
-
-h1 {
-  text-align: center;
-  font-family: 'Cinzel', serif;
-  font-size: 48px;
-  color: #f5f5f5;
-  text-shadow: 10px 10px 50px #ff0000;
-}
-
-h2 {
-  font-family: 'Cinzel', serif;
-  font-size: 32px;
-  margin-bottom: 4%;
-}
-
-
-.logoTexto{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo{
-  height: 100px;
-}
-/*--------------------------------------------------------Imagen Principal-------------------------------------------------------*/
-.imagenP{
-  width: 45%;
-}
-/*--------------------------------------------------------Texto principal-------------------------------------------------------*/
-
-.textoP{
-display: inline-block;
-font-size: larger;
-margin: 0;
-}
-
-.texto{
-  display: flex;
-  justify-content: space-between;
-  gap: 5%;
-}
-
-
-/*--------------------------------------------------------Contenido-------------------------------------------------------*/
-
-
-.aCont{
-  color: white;
-  text-decoration: none;
-}
-
-
-
-/*--------------------------------------------------------Reparto-------------------------------------------------------*/
-
-.reparto {
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-/*--------------------------------------------------------Imagenes-------------------------------------------------------*/
-
-
-.imagenes .grid {
+.imagenes .grid,
+.mapa .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 5%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2%;
 }
 
-.imgB {
-  border: 1px solid #444;
-}
-
-.imgB img {
+.imgB img,
+.imgBMapa img {
   width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .imgB img:hover {
   transform: scale(1.05);
-  transform: scale(2.30);
-  box-shadow: 0 10px 20px rgba(255,255,255,0.3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
+/*---------------- SOBRE LA SERIE ----------------*/
 
-/*--------------------------------------------------------Mapa-------------------------------------------------------*/
 
-.mapa .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-  gap: 2%;
-}
-
-.imgBMapa img{
-   width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s;
-}
-/*--------------------------------------------------------Footer-------------------------------------------------------*/
-
+/*---------------- FOOTER ----------------*/
 
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 2em;
   background-color: #1a0a1a;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
-.foterRedes{
+.foterRedes {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 1rem;
+}
+
+.foterRedes ul {
+  display: flex;
+  gap: 1.5rem;
   list-style: none;
+  padding: 0;
+}
+
+.foterRedes a {
+  color: #fff;
   text-decoration: none;
-  justify-content: space-evenly;
+  transition: color 0.3s;
 }
 
-
-.foterRedes ul li{
-   list-style: none;
+.foterRedes a:hover {
+  color: #a34096;
 }
-
