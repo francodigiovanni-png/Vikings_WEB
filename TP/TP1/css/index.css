@@ -142,7 +142,7 @@ main {
 .aCont:hover {
   background-color: #a34096;
   color: #fff;
-  transform: translateX(5px);
+  transform: translate(20px);
   box-shadow: 0 0 10px rgba(163, 64, 150, 0.6);
 }
 
