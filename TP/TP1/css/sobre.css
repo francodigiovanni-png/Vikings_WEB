@@ -1,111 +1,145 @@
-/*--------------------------------------------------------BODY-------------------------------------------------------*/
 
-.imagenFondo{
-width: 100%;
-height: auto;
-}
-
-body{
+body {
   background-color: black;
   color: white;
+  font-family: 'Cinzel', serif;
 }
 
-/*--------------------------------------------------------Main-------------------------------------------------------*/
-
-main{
-background: linear-gradient(to bottom, #1e0c1b, #2a1125);
-padding: 2.5% 2.5%;
-margin: 5% auto;
-border-radius: 10px;
-max-width: 65%;
+.imagenFondo {
+  width: 100%;
+  height: auto;
 }
 
-/*--------------------------------------------------------Barra de navegacion-------------------------------------------------------*/
+/*-------------------------------------------------------- NAV --------------------------------------------------------*/
 
 nav {
-  width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2.5%;
+  margin: 2em 0;
 }
 
 nav ul {
   display: flex;
-  gap: 40px;
+  gap: 2em;
   list-style: none;
 }
 
-nav li a {
-  color: white;
+nav a {
+  color: #fff;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 10px 15px;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
   border-radius: 10px;
-  transition: all 0.3s ease;
+  transition: all 0.3s;
 }
 
-nav li a:hover {
+nav a:hover,
+nav .ubicacion {
   color: #a34096;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-
-/*--------------------------------------------------------Titulo y logo-------------------------------------------------------*/
+/*-------------------------------------------------------- TITULOS --------------------------------------------------------*/
 
 h1 {
   text-align: center;
-  font-family: 'Cinzel', serif;
-  font-size: 48px;
-  color: #f5f5f5;
-  text-shadow: 10px 10px 50px #ff0000;
+  font-size: 4rem;
+  text-shadow: 0 0 40px #ff0000;
 }
 
 h2 {
-  font-family: 'Cinzel', serif;
-  font-size: 32px;
-  margin-bottom: 4%;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
 }
 
-.logoTexto{
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logoTexto {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
-.logo{
-  height: 100px;
+.logo {
+  height: 80px;
 }
 
-/*--------------------------------------------------------elenco-------------------------------------------------------*/
+p {
+  font-size: 19px;
+  line-height: 1.6;
+  text-align: justify;
+}
 
+/*-------------------------------------------------------- MAIN --------------------------------------------------------*/
 
-.texto{
-font-size: larger;
-
+main {
+  background: linear-gradient(to bottom, #1e0c1b, #2a1125);
+  padding: 3% 5%;
+  margin: 4% auto;
+  max-width: 70%;
+  border-radius: 10px;
 }
 
 
-/*--------------------------------------------------------Footer-------------------------------------------------------*/
+/*-------------------------------------------------------- IMAGENES  --------------------------------------------------------*/
 
+main img {
+  width: 220px;
+  border-radius: 10px;
+  margin: 10px 0 25px 0;
+  display: block;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/*-------------------------------------------------------- LISTAS --------------------------------------------------------*/
+
+.locación, .premios, .relacionado {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/*-------------------------------------------------------- HR --------------------------------------------------------*/
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 3rem 0;
+}
+
+/*-------------------------------------------------------- FOOTER --------------------------------------------------------*/
 
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 2em;
   background-color: #1a0a1a;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
-.foterRedes{
+.foterRedes {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  list-style: none;
-  text-decoration: none;
-  justify-content: space-evenly;
+  gap: 1rem;
 }
 
+.foterRedes ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
 
-.foterRedes ul li{
-   list-style: none;
+.foterRedes a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.foterRedes a:hover {
+  color: #a34096;
 }
