@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="eS">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre Vikingos</title>
-    <link rel="stylesheet" href="../css/contacto.css" />
 
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Vikingos</title>
+  <link rel="stylesheet" href="../css/contacto.css" />
+
+</head>
 
 <body>
-        <img class="imagenFondo" src="../img/Index/Fondo.jpg" alt="" />
+  <img class="imagenFondo" src="../img/Index/Fondo.jpg" alt="" />
 
-    <header>
-     <nav>
+  <header>
+    <nav>
       <ul>
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="../html/sobre.html">Sobre la Serie</a></li>
         <li><a href="../html/elenco.html">Elenco</a></li>
         <li><a href="../html/temporadas.html">Temporadas</a></li>
         <li><a href="../html/eventos.html">Eventos</a></li>
-        <li><a href="../html/contacto.html">Contacto</a></li>
+        <li><a href="../html/contacto.html"class="ubicacion">Contacto</a></li>
       </ul>
     </nav>
 
-        <div class="logoTexto">
+    <div class="logoTexto">
       <img class="logo" src="../img/Index/Logo.jpg" alt="Logo">
-    <h1> Vikingos </h1>
-    
+      <h1> Vikingos </h1>
+
     </div>
 
-    </header>
+  </header>
 
-    <main>
-    
-    <section >
-      <h2>Contacto</h2>
+  <main>
+
+    <section>
+      <h2 class="tituloForm">Contacto</h2>
       <div class="contacto">
-        <p>¿Tienes comentarios, dudas o sugerencias sobre la serie Vikings?</p>
-        <div >
-          Aca se agrega el formulario
+        <p class="texto">¿Tienes comentarios, dudas o sugerencias sobre la serie Vikings?</p>
+        <div>
+
+          <form action="confirmacion.html" class="formularioContacto">
+            <div class="campo">
+              <legend class="nombre">Nombre</legend>
+              <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="20">
+            </div>
+            
+            <div class="campo">
+              <legend class="apellido">Apellido</legend>
+              <input type="text" id="apellido" name="apellido" required minlength="5" maxlength="30">
+            </div>
+
+            <div class="campo">
+              <legend class="email">Email</legend>
+              <input type="email" id="email" name="email" required minlength="5" maxlength="30">
+            </div>
+
+            <div class="campo">
+              <legend class="mensaje">Mensaje</legend>
+              <input type="mensaje" id="mensaje" name="mensaje" rows = "5" required minlength="5" maxlength="30">
+            </div>
+
+                <input type="submit" value="ENVIAR" class="btnEnviar">
+
+          </form>
         </div>
 
         <h2>Otras formas de contacto</h2>
         <ul>
-          <li>Email: <a href="">contacto@vikingsfans.com</a></li>
+          <li>Email: <a href="../html/404.html">contacto@vikingsfans.com</a></li> <!-- ESTA ES LA PAGINA EN MANETNIMIENTO PROFE -->
           <li>Redes sociales:
             <ul>
               <li><a href="https://www.facebook.com/vikingosseriefans/?locale=es_LA">Facebook</a></li>
@@ -51,33 +76,35 @@
               <li><a href="https://x.com/HistoryVikings">Twitter</a></li>
             </ul>
           </li>
-          <li>Foro de fans: <a href="https://vikings.fandom.com/es/wiki/Foro:Bienvenidos">www.vikingsfans.com/foro</a></li>
+          <li>Foro de fans: <a href="https://vikings.fandom.com/es/wiki/Foro:Bienvenidos">www.vikingsfans.com/foro</a>
+          </li>
         </ul>
 
-    
+
       </div>
     </section>
   </main>
-  
-   <footer >
+
+  <footer>
     <div class="foterRedes">
-    <p>&copy; 2025 Fanpage creada por mi</p>
-    <ul>
-          
-          
-            <ul>
-              <li><a href="https://www.facebook.com/vikingosseriefans/?locale=es_LA">Facebook</a></li>
-              <li><a href="https://www.instagram.com/vikings_oficial/?hl=es">Instagram</a></li>
-              <li><a href="https://x.com/HistoryVikings">Twitter</a></li>
-            </ul>
-          
-          
+      <p>&copy; 2025 Fanpage creada por mi</p>
+      <ul>
+
+
+        <ul>
+          <li><a href="https://www.facebook.com/vikingosseriefans/?locale=es_LA">Facebook</a></li>
+          <li><a href="https://www.instagram.com/vikings_oficial/?hl=es">Instagram</a></li>
+          <li><a href="https://x.com/HistoryVikings">Twitter</a></li>
         </ul>
+
+
+      </ul>
     </div>
   </footer>
-    
+
 </body>
+
 </html>
 
-  
+
 </html>
