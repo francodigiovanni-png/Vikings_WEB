@@ -1,0 +1,99 @@
+/*--------------------------------------------------------BODY-------------------------------------------------------*/
+
+
+
+body{
+  background-color: black;
+  color: white;
+}
+
+.imagenFondo{
+width: 100%;
+height: auto;
+}
+
+
+/*--------------------------------------------------------Titulo y logo-------------------------------------------------------*/
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 0 0 40px #ff0000;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.logoTexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 80px;
+}
+
+
+
+/*--------------------------------------------------------Main-------------------------------------------------------*/
+
+main {
+  background: linear-gradient(to bottom, #1e0c1b, #2a1125);
+  padding: 3% 5%;
+  margin: 4% auto;
+  max-width: 70%;
+  border-radius: 10px;
+}
+
+
+
+/*--------------------------------------------------------Boton volver al inicio-------------------------------------------------------*/
+
+.botonVolver{
+  display: inline-block;
+  padding: 1rem 1rem;
+  background-color: grey;
+  border: 2px solid ;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*--------------------------------------------------------Footer-------------------------------------------------------*/
+
+
+
+footer {
+  text-align: center;
+  padding: 2em;
+  background-color: #1a0a1a;
+  font-size: 1rem;
+}
+
+.foterRedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.foterRedes ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.foterRedes a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.foterRedes a:hover {
+  color: #a34096;
+}
