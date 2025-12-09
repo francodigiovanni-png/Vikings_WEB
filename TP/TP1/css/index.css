@@ -44,6 +44,10 @@ nav .ubicacion {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.botonAbrir, 
+.botonCerrar {
+    display: none;
+}
 /*--------------------------------------------------------Titulo y logo-------------------------------------------------------*/
 
 h1 {
@@ -155,6 +159,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2%;
+  margin-bottom: 10px;
 }
 
 .imgB img,
@@ -203,3 +208,115 @@ footer {
 .foterRedes a:hover {
   color: #a34096;
 }
+
+
+
+
+/*--------------------------------------------------------RESPONSIVE-------------------------------------------------------*/
+
+
+/*--------------------------------------------------------MOBILE (360px a 767px)-------------------------------------------------------*/
+
+@media ( 360px <= width <= 767px) {
+
+  .botonAbrir {
+    display: block;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .menuDesplegado {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    background-color: rgba(10, 5, 10, 0.95);
+  }
+
+
+  .menuDesplegado:target {
+      right: 0;
+  }
+
+  .botonCerrar {
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+
+  .menuDesplegado ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .menuDesplegado a {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  main { 
+    max-width: 95%; 
+    margin: 1rem auto; 
+    padding: 1rem; 
+  }
+
+  .texto { 
+    flex-direction: column; 
+    gap: 20px; 
+  }
+
+  .texto-contenido { 
+    width: 100%; 
+  }
+
+  .imagenP { 
+    width: 100%; 
+    margin: 0 auto; 
+    display: block; 
+  }
+
+  .imagenes{
+     margin-bottom: 250px;
+  }
+}
+
+/*--------------------------------------------------------------TABLET (768px a 1200px)----------------------------------------------------------*/
+
+
+@media ( 768px <= width <= 1200px) {
+  
+
+  main {
+    max-width: 90%;
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .texto { 
+    flex-direction: column; 
+    gap: 20px; 
+  }
+
+  .texto-contenido { 
+    width: 100%; 
+  }
+
+  .imagenP { 
+    width: 100%; 
+    margin: 0 auto; 
+    display: block; 
+  }
+
+  .imagenes{
+    margin-bottom: 110px;
+  }
+
+}
+
