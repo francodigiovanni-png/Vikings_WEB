@@ -42,7 +42,10 @@ nav .ubicacion {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-
+.botonAbrir, 
+.botonCerrar {
+    display: none;
+}
 
 /*--------------------------------------------------------Titulo y logo-------------------------------------------------------*/
 
@@ -55,6 +58,7 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 
@@ -82,12 +86,13 @@ main {
 
 .personaje {
   display: flex;
+  align-items: center;
   margin-bottom: 50px;
   background-color: rgba(247, 247, 247, 0.05);
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
+  border: 1px solid rgba(163, 64, 150, 0.2);
 }
-
 
 .descripcion {
   font-size: 18px;
@@ -96,15 +101,15 @@ main {
 }
 
 .foto1 ,.foto2 {
-    width: 230px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .foto1:hover, .foto2:hover {
-  transform: scale(1.50);
+  transform: scale(1.15);
   box-shadow: 0 10px 20px rgba(255,255,255,0.3);
 }
 
@@ -142,4 +147,84 @@ footer {
 
 .foterRedes a:hover {
   color: #a34096;
+}
+
+
+/*--------------------------------------------------------RESPONSIVE-------------------------------------------------------*/
+
+
+/*--------------------------------------------------------MOBILE (360px a 767px)-------------------------------------------------------*/
+
+@media ( 360px <= width <= 767px) {
+
+  .botonAbrir {
+    display: block;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .menuDesplegado {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    background-color: rgba(10, 5, 10, 0.95);
+  }
+
+
+  .menuDesplegado:target {
+    right: 0;
+  }
+
+  .botonCerrar {
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+
+  .menuDesplegado ul {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .menuDesplegado a {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  main {
+    max-width: 95%;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  .personaje {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+ }
+
+ /*--------------------------------------------------------------TABLET (768px a 1200px)----------------------------------------------------------*/
+
+ @media ( 768px <= width <= 1200px) {
+  
+  main {
+    max-width: 90%;
+  }
+  
+  .personaje {
+    padding: 15px;
+  }
+  
+  .descripcion {
+    font-size: 1rem;
+  }
+
+
 }
