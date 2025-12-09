@@ -219,4 +219,8 @@ footer {
     margin-top: 3rem;
   }
 
+  a {
+    text-align: center;
+    display: inline-block; 
+  }
 }

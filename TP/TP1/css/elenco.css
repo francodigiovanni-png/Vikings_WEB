@@ -226,5 +226,10 @@ footer {
     font-size: 1rem;
   }
 
+  a {
+    text-align: center;
+    display: inline-block; 
+  }
+
 
 }

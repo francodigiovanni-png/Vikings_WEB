@@ -217,5 +217,10 @@ footer {
   main {
     max-width: 90%;
   }
+
+  a {
+    text-align: center;
+    display: inline-block; 
+  }
   
 }

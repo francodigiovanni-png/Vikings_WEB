@@ -318,5 +318,9 @@ footer {
     margin-bottom: 110px;
   }
 
+  a {
+    text-align: center;
+    display: inline-block; 
+  }
 }
 
