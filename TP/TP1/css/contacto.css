@@ -158,6 +158,64 @@ main {
   text-decoration: none;
   cursor: pointer;
 }
+
+/*--------------------------------------------------------Redes-------------------------------------------------------*/
+
+.titulo{
+  margin-top: 60px;
+  display: inline-block;
+  padding-bottom: 10px
+}
+
+.redes{
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.item{
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-left: 5px solid #570749;
+  border-radius: 0 10px 10px 0;
+}
+
+.listaRedes{
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.enlases{
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: transparent;
+  border: 1px solid #a34096;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.reparacion{
+  display: inline-block;
+  color: #ffb3b3;
+  font-size: 0.8rem;
+  background-color: rgba(100, 0, 0, 0.3);
+  border: 1px solid #8b0000;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+
 /*--------------------------------------------------------Footer-------------------------------------------------------*/
 
 
